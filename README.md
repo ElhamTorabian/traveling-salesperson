@@ -14,13 +14,13 @@ This problem contains two exercises which illustrate the difference between the 
 The program ``hss_exercise.py`` is the first exercise. You will need to:
 
  1. Call the hybrid solver
- 2. Call the traveling salesperson QUBO generator from ``dwave_networkx``
- 3. Fill in the ``get-qubo`` function
+ 2. Call the traveling salesperson BQM generator from ``dimod.generators``
+ 3. Fill in the ``get-bqm`` function
  4. Setup your sampler in the ``get_sampler`` function to run on the hybrid sampler
 
  Notes: 
  
-1. Don't forget to import the packages where the sampler and traveling salesperson QUBO generator lives.
+1. Don't forget to import the packages where the sampler and traveling salesperson BQM generator lives.
 2. You may find the [Ocean documentation](https://docs.dwavequantum.com/en/latest/ocean/index.html) useful.
 
 ## Exercise 2 

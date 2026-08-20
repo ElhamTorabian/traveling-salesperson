@@ -21,7 +21,7 @@ import networkx as nx
 
 
 def get_bqm(G, lagrange):
-    """Returns a BQM model for the Traveling Salesperson problem"""
+    """Returns a Binary Quadratic Model representing the TSP"""
 
     # TODO:  Add BQM construction here
 

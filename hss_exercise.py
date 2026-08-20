@@ -14,28 +14,26 @@
 
 ## ------- import packages -------
 import networkx as nx
-import dimod
+
 # TODO:  Import your sampler
 
-# TODO:  Import your Traveling Salesperson QUBO generator
+# TODO:  Import your Traveling Salesperson BQM generator
 
 
-def get_qubo(G, lagrange, n):
-    """Returns a dictionary representing a QUBO"""
+def get_bqm(G, lagrange):
+    """Returns a BQM model for the Traveling Salesperson problem"""
 
-    # TODO:  Add QUBO construction here
+    # TODO:  Add BQM construction here
 
-    offset = 2 * n * lagrange
+    
 
-    return Q, offset
+    return bqm
 
 
 def get_sampler():
     """Returns a sampler"""
 
     # TODO: Enter your sampler here
-
-
 
     return sampler
 
@@ -69,9 +67,8 @@ if __name__ == "__main__":
 	(4, 6, 916),
 	(5, 6, 702)
     ])
-    Q, offset = get_qubo(G, lagrange, n)
+    bqm = get_bqm(G, lagrange)
     sampler = get_sampler()
-    bqm = dimod.BinaryQuadraticModel.from_qubo(Q, offset=offset)
     response = sampler.sample(bqm, label="Training - TSP")
 
     start = None

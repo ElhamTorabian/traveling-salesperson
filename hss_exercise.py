@@ -15,9 +15,9 @@
 ## ------- import packages -------
 import networkx as nx
 
-# TODO:  Import your sampler
+# TODO:  Import the sampler
 
-# TODO:  Import your Traveling Salesperson BQM generator
+# TODO:  Import the Traveling Salesperson BQM generator
 
 
 def get_bqm(G, lagrange):

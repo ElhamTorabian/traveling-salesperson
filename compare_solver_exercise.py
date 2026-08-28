@@ -21,11 +21,11 @@ import networkx as nx
 # TODO:  Import the Traveling Salesperson BQM generator
 
 
-
 def get_bqm(G, lagrange):
     """Returns a BQM model for the Traveling Salesperson problem"""
 
     # TODO:  Generate the BQM
+
 
     return bqm
 
@@ -36,7 +36,6 @@ def get_sampler():
 
 
     return sampler
-
 
 ## ------- Main program -------
 if __name__ == "__main__":

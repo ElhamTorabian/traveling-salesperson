@@ -25,7 +25,7 @@ The program ``hss_exercise.py`` is the first exercise. You will need to:
 
 ## Exercise 2 
 
-The second exercise is ``compare_solver_exercise.py``. This file is identical to the hss_exercise.py, except you will call a classical solver instead of a hybrid solver. 
+The second exercise is ``compare_solver_exercise.py``. This file is identical to the ``hss_exercise.py``, except you will call a classical solver instead of a hybrid solver. 
 There are two things you should modify from what you did in exercise 1: 
 
 1. Call an alternative sampler (choose ``SimulatedAnnealingSampler``)
